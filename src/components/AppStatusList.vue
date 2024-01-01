@@ -4,7 +4,7 @@
 
     <ul
       v-if="!isLoading"
-      class="d-flex gap-3 px-0"
+      class="d-flex flex-wrap gap-3 px-0"
     >
       <li
         v-for="status in statuses"

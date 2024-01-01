@@ -35,7 +35,7 @@
 
     <div
       v-else-if="tasks.length && !isLoading"
-      class="row row-cols-2 g-3"
+      class="row row-cols-md-2 g-3 row-cols-sm-1"
     >
       <div
         class="col"
