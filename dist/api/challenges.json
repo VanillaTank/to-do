@@ -1,0 +1,306 @@
+[
+  {
+    "id": 0,
+    "title": "Стать донором крови",
+    "description": "Хочу сделать чо-то хорошее, у меня хорошая кровь. Только нужно увеличить гемоглобин",
+    "nextStep": "Понять каков след шаг - диета или запись в центр (размышление)",
+    "tagIds": [
+      0,
+      3
+    ],
+    "statusId": 1,
+    "dateDone": "",
+    "freezeReason": "",
+    "whyItUrgent": "",
+    "whyItImportant": "",
+    "whyDontSure": "",
+    "deadline": ""
+  },
+  {
+    "id": 1,
+    "title": "Сделать поделки из шнура",
+    "description": "Использовать шнур для макараме, чтобы не занимал место и не вызывал воспоминания об ошибке",
+    "nextStep": "Выделить время",
+    "tagIds": [
+      1,
+      3
+    ],
+    "statusId": 1,
+    "dateDone": "",
+    "freezeReason": "",
+    "whyItUrgent": "",
+    "whyItImportant": "",
+    "whyDontSure": "",
+    "deadline": ""
+  },
+  {
+    "id": 2,
+    "title": "Смонтировать видео мастер-класса",
+    "description": "Не быть голословной в глазах Саске\nПопробовать и понять как мне в этой деятельности\nПрименить навык решения проблем\nЗакрыть гештальт\nШаг в ведении блога\nКак Лисса",
+    "nextStep": "Выделить время, скинуть видео с телефона на комп",
+    "tagIds": [
+      1,
+      3,
+      5
+    ],
+    "statusId": 1,
+    "dateDone": "",
+    "freezeReason": "",
+    "whyItUrgent": "",
+    "whyItImportant": "",
+    "whyDontSure": "Займет много времени, я вообще не уверена, что мне нужен блог",
+    "deadline": ""
+  },
+  {
+    "id": 3,
+    "title": "Подарок Стасу и Диме на НГ",
+    "description": "Они клевые",
+    "nextStep": "Купить энегросы и валерианку",
+    "tagIds": [
+      1,
+      2,
+      4,
+      6
+    ],
+    "statusId": 1,
+    "dateDone": "",
+    "freezeReason": "",
+    "whyItUrgent": "Не актуально после НГ",
+    "whyItImportant": "Они крутые, я хочу строить с ними хорошие отношения",
+    "whyDontSure": "Займет много времени, я вообще не уверена, что мне нужен блог",
+    "deadline": "29.12.2023"
+  },
+  {
+    "id": 4,
+    "title": "Подарок маме на НГ",
+    "description": "Купить перчатки и антипригарный коврик",
+    "nextStep": "Узнать размер маминого противня",
+    "tagIds": [
+      1,
+      2,
+      4,
+      6
+    ],
+    "statusId": 1,
+    "dateDone": "",
+    "freezeReason": "",
+    "whyItUrgent": "Не актуально после НГ",
+    "whyItImportant": "",
+    "whyDontSure": "",
+    "deadline": "31.12.2023"
+  },
+  {
+    "id": 5,
+    "title": "Курс Вадима по Vue",
+    "description": "",
+    "nextStep": "Смотреть и конспектировать курс",
+    "tagIds": [
+      1,
+      3,
+      4
+    ],
+    "statusId": 1,
+    "dateDone": "",
+    "freezeReason": "",
+    "whyItUrgent": "Раньше посмотрю, раньше перейду к следующему обучению",
+    "whyItImportant": "",
+    "whyDontSure": "",
+    "deadline": ""
+  },
+  {
+    "id": 6,
+    "title": "Разобрать и убраться на столе",
+    "description": "",
+    "nextStep": "Найти силы и время",
+    "tagIds": [
+      1
+    ],
+    "statusId": 1,
+    "dateDone": "",
+    "freezeReason": "",
+    "whyItUrgent": "",
+    "whyItImportant": "",
+    "whyDontSure": "",
+    "deadline": ""
+  },
+  {
+    "id": 7,
+    "title": "Помыть и проклеить окна",
+    "description": "",
+    "statusId": 1,
+    "dateDone": "",
+    "freezeReason": "",
+    "tagIds": [
+      1,
+      2,
+      4
+    ],
+    "nextStep": "Найти силы и время",
+    "whyItUrgent": "Холодно, растения (кофе особенно) болеют и теряют листья. Могут совсем погибнуть",
+    "whyItImportant": "Если чет сдохнет, я буду чувствовать себя супер виноватой",
+    "whyDontSure": "",
+    "deadline": ""
+  },
+  {
+    "id": 8,
+    "title": "Пост в блог(хюгге-боксы)",
+    "description": "",
+    "statusId": 1,
+    "dateDone": "",
+    "freezeReason": "",
+    "tagIds": [
+      1,
+      2,
+      5,
+      6
+    ],
+    "nextStep": "Собрать картинки, сделать план, сесть и написать",
+    "whyItUrgent": "Будет менее актуально после праздников",
+    "whyItImportant": "",
+    "whyDontSure": "Не уверена, что мне вообще нужен блог",
+    "deadline": "29.12.2023"
+  },
+  {
+    "id": 9,
+    "title": "Приложение для калимбы",
+    "description": "Огромный проект, который требует тщательного продумывания и распределения задач",
+    "statusId": 1,
+    "dateDone": "",
+    "freezeReason": "",
+    "tagIds": [
+      1,
+      4,
+      5
+    ],
+    "nextStep": "Выделить время на планирование (2 часа)",
+    "whyItUrgent": "Будет менее актуально после праздников",
+    "whyItImportant": "Возможно, это приблизит меня к богатству",
+    "whyDontSure": "Не уверена, что это сработает, не уверена, что это лучший выбор",
+    "deadline": ""
+  },
+  {
+    "id": 10,
+    "title": "Починить пряжку на рюкзаке",
+    "description": "Благополучие в мелочах",
+    "statusId": 1,
+    "dateDone": "",
+    "freezeReason": "",
+    "tagIds": [
+      1,
+      3
+    ],
+    "nextStep": "Найти паяльник и время",
+    "whyItUrgent": "",
+    "whyItImportant": "",
+    "whyDontSure": "",
+    "deadline": ""
+  },
+  {
+    "id": 11,
+    "title": "Почистить настольный вентилятор дома",
+    "description": "",
+    "statusId": 1,
+    "dateDone": "",
+    "freezeReason": "",
+    "tagIds": [
+      1,
+      2,
+      4
+    ],
+    "nextStep": "Выделить время(40 минут)",
+    "whyItUrgent": "Очень пыльный",
+    "whyItImportant": "Хватит направлять на себя пыль!",
+    "whyDontSure": "",
+    "deadline": ""
+  },
+  {
+    "id": 12,
+    "title": "Курс Милы про деньги",
+    "description": "",
+    "statusId": 1,
+    "dateDone": "",
+    "freezeReason": "",
+    "tagIds": [
+      1,
+      2
+    ],
+    "nextStep": "Законспектировать банковские продукты, заполнить свою финансовую таблицу",
+    "whyItUrgent": "Раньше пройду - раньше стану богаче",
+    "whyItImportant": "Хватит направлять на себя пыль!",
+    "whyDontSure": "",
+    "deadline": ""
+  },
+  {
+    "id": 13,
+    "title": "Песня в блокнот - The real life",
+    "description": "Может быть, немного улучшит английский",
+    "statusId": 1,
+    "dateDone": "",
+    "freezeReason": "",
+    "tagIds": [
+      1,
+      3,
+      5
+    ],
+    "nextStep": "Найти тетрадь, песню и маркеры. Написать черновик",
+    "whyItUrgent": "",
+    "whyItImportant": "",
+    "whyDontSure": "Могу загнаться, что плохой почерк и выходит некрасиво",
+    "deadline": ""
+  },
+  {
+    "id": 14,
+    "title": "Посмотреть клавиатуру в шкафу",
+    "description": "Моя клавиатура огромная, может, есть по-меньше?",
+    "statusId": 1,
+    "dateDone": "",
+    "freezeReason": "",
+    "tagIds": [
+      1,
+      3
+    ],
+    "nextStep": "Найти время",
+    "whyItUrgent": "",
+    "whyItImportant": "",
+    "whyDontSure": "",
+    "deadline": ""
+  },
+  {
+    "id": 15,
+    "title": "Песня в блокнот - Bath cat",
+    "description": "Может быть, немного улучшит английский",
+    "statusId": 1,
+    "dateDone": "",
+    "freezeReason": "",
+    "tagIds": [
+      1,
+      3,
+      5
+    ],
+    "nextStep": "Найти тетрадь, песню и маркеры. Написать черновик",
+    "whyItUrgent": "",
+    "whyItImportant": "",
+    "whyDontSure": "Могу загнаться, что плохой почерк и выходит некрасиво",
+    "deadline": ""
+  },
+  {
+    "id": 16,
+    "title": "Сделать график и время ежедневной рутины",
+    "description": "Надеюсь, стану регулярно пить витамины и в жизни будет чуть больше стабильности",
+    "statusId": 1,
+    "dateDone": "",
+    "freezeReason": "",
+    "tagIds": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "nextStep": "Перечислить дела, прикинуть, когда лучше их делать и сколько на них нужно времени",
+    "whyItUrgent": "Раньше начну - быстрее будет результат",
+    "whyItImportant": "Долголетие?",
+    "whyDontSure": "А не фигню ли я придумала?",
+    "deadline": ""
+  }
+]
+
