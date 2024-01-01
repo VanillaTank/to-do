@@ -34,6 +34,7 @@ import ApiService from '@/api/ApiService.ts'
 
 export default {
   name: 'AppStatusList',
+  emits: ['updateSelectedStatus'],
   data() {
     return {
       statuses: [],
@@ -62,7 +63,7 @@ export default {
       this.selectedStatus = null
       this.$emit('updateSelectedStatus', this.selectedStatus)
     },
-  }
+  },
 }
 </script>
 <style></style>

@@ -86,9 +86,10 @@ export default {
   props: {
     task: {
       type: Object, // Task
-      required: true
-    }
+      required: true,
+    },
   },
+  emits: ['editTask', 'updateStatus'],
   computed: {
     ...mapState({
       statuses(state) {
@@ -96,11 +97,11 @@ export default {
       },
       tags(state) {
         return state.tags
-      }
+      },
     }),
     isStateReady() {
       return this.statuses.length && this.tags.length
-    }
+    },
   },
 }
 </script>

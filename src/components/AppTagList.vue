@@ -34,11 +34,12 @@ import ApiService from '@/api/ApiService.ts'
 
 export default {
   name: 'AppTagList',
+  emits: ['updateSelectedTags'],
   data() {
     return {
       tags: [],
       isLoading: false,
-      selectedTags: [1]
+      selectedTags: [1],
     }
   },
   created() {
@@ -62,7 +63,7 @@ export default {
       this.selectedTags = []
       this.$emit('updateSelectedTags', this.selectedTags)
     },
-  }
+  },
 }
 </script>
 <style></style>

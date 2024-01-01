@@ -3,11 +3,11 @@
     <div class="row">
       <div class="col-11">
         <app-status-list
-          @updateSelectedStatus="filter.statusId = $event"
+          @update-selected-status="filter.statusId = $event"
         />
 
         <app-tag-list
-          @updateSelectedTags="filter.tagIds = $event"
+          @update-selected-tags="filter.tagIds = $event"
         />
       </div>
       <div class="col-1">
@@ -23,11 +23,11 @@
       :modal-title="modalTitle"
       :modal-ok="modalOk"
       @ok="onOkModal"
-      @closeModal="onCloseModal"
+      @close-modal="onCloseModal"
     >
       <app-task-form
         :task="taskForEdit"
-        @updatedFormData="updatedFormData = $event"
+        @updated-form-data="updatedFormData = $event"
       />
     </app-modal>
 
@@ -38,16 +38,16 @@
       class="row row-cols-md-2 g-3 row-cols-sm-1"
     >
       <div
-        class="col"
         v-for="task in tasks"
         :key="task.id"
+        class="col"
       >
         <app-task
-          class="card p-4 h-100"
           :key="task.id"
+          class="card p-4 h-100"
           :task="task"
-          @editTask="onEditTask(task.id)"
-          @updateStatus="onUpdateStatus"
+          @edit-task="onEditTask(task.id)"
+          @update-status="onUpdateStatus"
         />
       </div>
     </div>
@@ -76,12 +76,12 @@ export default {
       tasks: [],
       filter: {
         statusId: 0,
-        tagIds: []
+        tagIds: [],
       },
       isLoading: false,
       isAddTaskMode: true,
       taskForEdit: null,
-      updatedFormData: null
+      updatedFormData: null,
     }
   },
   computed: {
@@ -90,7 +90,7 @@ export default {
     },
     modalOk() {
       return this.isAddTaskMode ? 'Добавить задачу' : 'Сохранить'
-    }
+    },
   },
   watch: {
     filter: {
@@ -101,8 +101,8 @@ export default {
           this.tasks = tasks
           this.isLoading = false
         })
-      }
-    }
+      },
+    },
   },
   methods: {
     /**
@@ -134,7 +134,7 @@ export default {
      * @param {Object} testingFormData
      */
     isValid (propertyList, testingFormData) {
-      return propertyList.every((requiredField => testingFormData.hasOwnProperty(requiredField) && testingFormData[requiredField]))
+      return propertyList.every((requiredField => Object.prototype.hasOwnProperty.call(testingFormData, requiredField) && testingFormData[requiredField]))
     },
     onOkModal() {
       const copyTask = structuredClone(toRaw(this.updatedFormData))
@@ -187,8 +187,8 @@ export default {
     onCloseModal() {
       this.taskForEdit = null
       this.updatedFormData = null
-    }
-  }
+    },
+  },
 }
 </script>
 

@@ -34,17 +34,18 @@ export default {
     dropdownTitleText: {
       type: String,
       default: '',
-    }
+    },
   },
+  emits: ['select'],
   data () {
     return {
-      selectedItemId: -1
+      selectedItemId: -1,
     }
   },
   computed: {
     dropdownTitle () {
       return this.items.find(item => item.id === this.selectedItemId)?.title || this.dropdownTitleText || 'Выберите значение'
-    }
+    },
   },
   mounted() {
     if (this.preselectedItemId !== -1) {
@@ -57,8 +58,8 @@ export default {
         this.selectedItemId = itemId
         this.$emit('select', itemId)
       }
-    }
-  }
+    },
+  },
 
 }
 </script>

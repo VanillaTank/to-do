@@ -3,30 +3,30 @@
     <label class="w-100 mb-2">
       Название: <span class="text-danger">*</span>
       <input
+        v-model="formData.title"
         class="form-control form-control-sm"
         type="text"
         placeholder="Введите текст"
-        v-model="formData.title"
       >
     </label>
 
     <label class="w-100 mb-2">
       Описание:
       <textarea
+        v-model="formData.description"
         class="form-control form-control-sm"
         type="text"
         placeholder="Введите текст"
-        v-model="formData.description"
       />
     </label>
 
     <label class="w-100 mb-2">
       Следующий шаг:
       <input
+        v-model="formData.nextStep"
         class="form-control form-control-sm"
         type="text"
         placeholder="Введите текст"
-        v-model="formData.nextStep"
       >
     </label>
 
@@ -69,10 +69,10 @@
     >
       Причина срочности:
       <input
+        v-model="formData.whyItUrgent"
         class="form-control form-control-sm"
         type="text"
         placeholder="Введите текст"
-        v-model="formData.whyItUrgent"
       >
     </label>
 
@@ -82,10 +82,10 @@
     >
       Почему это так важно?
       <input
+        v-model="formData.whyItImportant"
         class="form-control form-control-sm"
         type="text"
         placeholder="Введите текст"
-        v-model="formData.whyItImportant"
       >
     </label>
 
@@ -95,10 +95,10 @@
     >
       Причина неувренности:
       <input
+        v-model="formData.whyDontSure"
         class="form-control form-control-sm"
         type="text"
         placeholder="Введите текст"
-        v-model="formData.whyDontSure"
       >
     </label>
 
@@ -108,10 +108,10 @@
     >
       Дедлайн:
       <input
+        v-model="formData.deadline"
         class="form-control form-control-sm"
         type="text"
         placeholder="DD.MM.YYYY"
-        v-model="formData.deadline"
       >
     </label>
   </form>
@@ -127,12 +127,13 @@ export default {
   props: {
     task: {
       type: Object,
-      default: null
-    }
+      default: null,
+    },
   },
+  emits: ['updatedFormData'],
   data() {
     return {
-      formData: {}
+      formData: {},
     }
   },
   computed: {
@@ -142,25 +143,25 @@ export default {
       },
       tags(state) {
         return state.tags
-      }
+      },
     }),
     filteredTags () {
       return this.tags.filter(tag => !this.formData.tagIds.includes(tag.id))
-    }
+    },
   },
   watch: {
     formData: {
       deep: true,
       handler(newVal) {
         this.$emit('updatedFormData', newVal)
-      }
+      },
     },
     task: {
       immediate: true,
       handler(newVal) {
         this.setInitFormData(newVal)
-      }
-    }
+      },
+    },
   },
   methods: {
     setInitFormData(newVal) {
@@ -169,6 +170,7 @@ export default {
         title: newVal?.title || '',
         description: newVal?.description || '',
         nextStep: newVal?.nextStep || '',
+        // eslint-disable-next-line no-unsafe-optional-chaining
         tagIds: newVal?.tagIds.length ? [...this.task?.tagIds] : [],
         statusId: newVal?.statusId || 1,
         freezeReason: newVal?.freezeReason || '',
@@ -189,8 +191,8 @@ export default {
     onStatusSelect (statusId) {
       this.formData.statusId = statusId
       this.formData.dateDone = moment().format('DD.MM.YYYY hh:mm')
-    }
-  }
+    },
+  },
 }
 </script>
 <style></style>

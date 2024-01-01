@@ -41,6 +41,6 @@ export default {
 
   updateTaskStatus ({ taskId, newStatusId }: { taskId: number, newStatusId: number }) {
     return axios.post(`${API_URL}/update-status?id=${taskId}`, {newStatusId})
-  }
+  },
 }
 

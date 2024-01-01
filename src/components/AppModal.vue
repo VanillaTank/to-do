@@ -2,13 +2,14 @@
   <button
     ref="toggleBtn"
     type="button" class="invisible" data-bs-toggle="modal" :data-bs-target="`#${modalId}`"></button>
-  <div class="modal fade"
-       :id="modalId" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  <div
+:id="modalId"
+       class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
        aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">{{ modalTitle }}</h1>
+          <h1 id="staticBackdropLabel" class="modal-title fs-5">{{ modalTitle }}</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" @click="$emit('closeModal')"></button>
         </div>
         <div class="modal-body">
@@ -16,7 +17,8 @@
         </div>
         <div class="modal-footer">
 
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+          <button
+type="button" class="btn btn-secondary" data-bs-dismiss="modal"
                   @click="$emit('closeModal')"
           >Закрыть
           </button>
@@ -34,7 +36,7 @@ export default {
   props: {
     modalId: {
       type: String,
-      required: true
+      required: true,
     },
     modalTitle: {
       type: String,
@@ -43,7 +45,7 @@ export default {
     modalOk: {
       type: String,
       default: 'OK',
-    }
+    },
   },
   emits: ['closeModal', 'ok'],
   methods: {
@@ -52,8 +54,8 @@ export default {
     },
     close () {
       this.$refs.toggleBtn.click()
-    }
-  }
+    },
+  },
 }
 </script>
 

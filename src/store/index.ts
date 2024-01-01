@@ -6,7 +6,7 @@ export default createStore({
   state () {
     return {
       statuses: [],
-      tags: []
+      tags: [],
     }
   },
   mutations: {
@@ -16,5 +16,5 @@ export default createStore({
     setStatuses (state: any, payload: Tag[]) {
       state.statuses = payload
     },
-  }
+  },
 })
